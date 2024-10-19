@@ -1,0 +1,13 @@
+Records for custom dns:
+
+Type |Name|Content        |Proxy status
+---------------------------------------
+A    |@   |185.199.108.153|Proxied
+A    |@   |185.199.109.153|Proxied
+A    |@   |185.199.110.153|Proxied
+A    |@   |185.199.111.153|Proxied
+CNAME|www |domain         |Proxied
+
+TXT  |name|content
+
+name & content provided by discord
