@@ -1,4 +1,4 @@
 # Links:
 
-- [github Link](paul-hartwich.github.io)  
+- [github Link](https://paul-hartwich.github.io/)  
 - [custom domain](paulhartwich.de)
