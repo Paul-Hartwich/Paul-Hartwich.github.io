@@ -1,5 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Updating Website
 
 on:
   # Runs on pushes targeting the default branch
@@ -38,10 +37,10 @@ jobs:
         with:
           # Upload entire repository except specified files/folders
           path: |
-            .
-            !README.md
-            !deployment/**
-            !.github/**
+            ./
+            !./README.md
+            !./deployment/**
+            !./.github/**
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
