@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const displayContents = async () => {
         const container = document.getElementById('directory-contents');
-        const excludeFiles = ['index.html', 'assets.html', 'pages.js', 'README.md'];
+        const excludeFiles = ['assets.js', 'pages.js', 'assets.css', 'pages.css'];
 
         for (const dir of directories) {
             try {
