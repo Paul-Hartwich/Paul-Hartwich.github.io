@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const displayContents = async () => {
         const container = document.getElementById('directory-contents');
-        const excludeFiles = ['assets.js', 'pages.js', 'assets.css', 'pages.css'];
+        const excludePrefixes = ['pages', 'assets'];
 
         for (const dir of directories) {
             try {
                 const files = await fetchDirectoryContents(dir);
                 console.log(files); // Log the response to inspect its structure
-                const filteredFiles = files.filter(file => !excludeFiles.includes(file.name));
+                const filteredFiles = files.filter(file => !excludePrefixes.some(prefix => file.name.startsWith(prefix)));
                 const dirElement = document.createElement('div');
                 dirElement.innerHTML = `<h2>${dir}</h2><ul>${filteredFiles.map(file => `<li><a href="${file.html_url}" target="_blank">${file.name}</a></li>`).join('')}</ul>`;
                 container.appendChild(dirElement);
