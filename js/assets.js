@@ -12,12 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const displayContents = async () => {
         const container = document.getElementById('directory-contents');
+        const excludeFiles = ['index.html', 'assets.html', 'pages.js', 'README.md'];
+
         for (const dir of directories) {
             try {
                 const files = await fetchDirectoryContents(dir);
                 console.log(files); // Log the response to inspect its structure
+                const filteredFiles = files.filter(file => !excludeFiles.includes(file.name));
                 const dirElement = document.createElement('div');
-                dirElement.innerHTML = `<h2>${dir}</h2><ul>${files.map(file => `<li><a href="${file.html_url}" target="_blank">${file.name}</a></li>`).join('')}</ul>`;
+                dirElement.innerHTML = `<h2>${dir}</h2><ul>${filteredFiles.map(file => `<li><a href="${file.html_url}" target="_blank">${file.name}</a></li>`).join('')}</ul>`;
                 container.appendChild(dirElement);
             } catch (error) {
                 console.error('Error fetching directory contents:', error);
