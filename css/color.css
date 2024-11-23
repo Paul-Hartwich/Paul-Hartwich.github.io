@@ -6,12 +6,4 @@ body {
     color: light-dark(#333, #f4f4f9);
     background-color: light-dark(#f4f4f9, #333);
     font-family: "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-    padding: 50px;
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: 300;
-    margin-bottom: 20px;
 }
