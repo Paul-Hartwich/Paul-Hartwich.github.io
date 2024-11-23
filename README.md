@@ -1,1 +1,1 @@
-# [Assets](https://paulhartwich.com/assets/)
+# [Assets](https://paulhartwich.com/assets.html/)
