@@ -7,34 +7,3 @@ body {
     background-color: light-dark(#f4f4f9, #333);
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
-/* Set color for links */
-a {
-    color: light-dark(#1a73e8, #8ab4f8);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Set color for buttons */
-button {
-    color: light-dark(#ffffff, #000000);
-    background-color: light-dark(#1a73e8, #8ab4f8);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: light-dark(#1558b0, #6a9df8);
-}
-
-/* Set color for button outlines */
-button:focus {
-    outline: 2px solid light-dark(#1a73e8, #8ab4f8);
-    outline-offset: 2px;
-}
